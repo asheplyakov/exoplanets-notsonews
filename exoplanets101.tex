@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 \mode<presentation> {
 \usetheme{Goettingen}
@@ -28,9 +28,6 @@
 \vspace{-5cm}
 \small{
 \centerline{There are also numberless earths circling around their suns...}
-\begin{flushright}
-\tiny{--- Giordano Bruno, Despre infinit univers si lumi, 1584}
-\end{flushright}
 }
 \end{frame}
 }
@@ -58,11 +55,12 @@ Extrasolar planet is a planet located outside the Solar system
 \begin{frame}
 \frametitle{History of exoplanets exploration}
 \begin{itemize}
+\item 1584 "Innumerable suns and earths" hypothesis by Giordano Bruno
 \item 1992 $M_\Earth$ planet orbiting \href{https://en.wikipedia.org/wiki/PSR_B1257\%2B12}{PSR B1257+12} pulsar
 \item 1995 Planet orbiting a main sequence star detected by
       \href{http://www.obs-hp.fr/guide/elodie/elodie-eng.html}{ELODIE spectrograph}
 \item 2008 30+ planets discovered by \href{http://www.eso.org/sci/facilities/lasilla/instruments/harps.html}{HARPS spectrograph}
-\item 2014 Discovery of 715 verified planets around 305 stars by %
+\item 2014 Discovery of 715 planets around 305 stars by %
       \href{http://www.nasa.gov/mission_pages/kepler/main/index.html}{Kepler Space Telescope}
 \end{itemize}
 \end{frame}
@@ -70,23 +68,24 @@ Extrasolar planet is a planet located outside the Solar system
 \section{Methods of detection}
 \begin{frame}
 \frametitle{Methods of detection}
+\begin{columns}
+\column{0.25\textwidth}
+\includegraphics[width=0.90\textwidth]{img/20130108_Planetary_transit_f537.jpg}
+\column{0.75\textwidth}
 \begin{block}{Transit photometry}
-\begin{columns}[T]
-\column{0.25\textwidth}
-\includegraphics[width=0.95\textwidth]{img/20130108_Planetary_transit_f537.jpg}
-\column{0.75\textwidth}
 As the planet moves in front of its star the star luminosity dips, and then returns to its former level
-\end{columns}
 \end{block}
-\begin{block}{Doppler spectroscopy}
-\begin{columns}[T]
+\end{columns}
+
+\begin{columns}
 \column{0.25\textwidth}
-\includegraphics[width=0.95\textwidth]{img/Dopplerspectr-above.png}
+\includegraphics[width=0.90\textwidth]{img/Dopplerspectr-above.png}
 \column{0.75\textwidth}
+\begin{block}{Doppler spectroscopy}
 Star moves in a small circle when it is orbited by a planet. These movements causes
 a tiny periodic Doppler shift 
-\end{columns}
 \end{block}
+\end{columns}
 \begin{block}{Others}
 \begin{itemize}
 \item Direct infrared imaging (young hot heavy planets)
@@ -118,18 +117,18 @@ a tiny periodic Doppler shift
 
 \column{0.48\textwidth}
 \begin{figure}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/obvious_transit.png}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/shallow_transit.png}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/stellar_variability_transit.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/obvious_transit.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/shallow_transit.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/stellar_variability_transit.png}
 \captionsetup{labelformat=empty}
 \onslide<2->{\caption{Genuine transits}}
 \end{figure}
 
 \column{0.48\textwidth}
 \begin{figure}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/starspots_moderate.png}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/startspots_fast.png}
-\includegraphics[width=0.95\textwidth]{img/zooniverse.org/eclipsing_binaries_another.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/starspots_moderate.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/startspots_fast.png}
+\includegraphics[height=0.24\textheight]{img/zooniverse.org/eclipsing_binaries_another.png}
 \captionsetup{labelformat=empty}
 \onslide<2->{\caption{Star spots, eclipsing binaries}}
 \end{figure}
@@ -162,15 +161,9 @@ Transiting Exoplanet Survey Satellite (TESS), April 2018 -- now
 \frametitle{Doppler spectroscopy}
 
 \begin{columns}
-\column{0.45\textwidth}
-\includegraphics[width=\textwidth]{img/Dopplerspectr-above.png}
-\column{0.45\textwidth}
-\includegraphics[width=\textwidth]{img/51Pegasi.png}
-\end{columns}
-
+\column{0.75\textwidth}
 Sun: orbital speed: $V_{orb} \approx 200 \mathrm{km/s}$ \\
 Radial velocity of Sun due to Jupiter: $\approx 12.7 m/s$ \\
-
 \begin{itemize}
 \item[+] 1st method that worked with main sequence stars
 \item[+] Good at detecting "hot Jupiter" planets
@@ -179,6 +172,13 @@ Radial velocity of Sun due to Jupiter: $\approx 12.7 m/s$ \\
 \item[-] False positives due to intrinsic variability of stars
 \item[-] No Doppler shift if the orbital plane is "edge-on"
 \end{itemize}
+\column{0.25\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{img/51Pegasi.png}
+\includegraphics[width=\textwidth]{img/Dopplerspectr-above.png}
+\end{figure}
+
+\end{columns}
 \end{frame}
 
 \begin{frame}
