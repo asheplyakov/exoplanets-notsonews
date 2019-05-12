@@ -1,0 +1,58 @@
+beginfig(1);
+pair p[];
+pair q[];
+p0 := (0, 0);
+p1 := (6cm, 0);
+p2 := (7cm, 0);
+draw p0--p1;
+drawarrow p1--p2;
+pickup pencircle scaled 8;
+draw p0;
+draw p1;
+pickup defaultpen;
+q0 := p0 + (0, 1cm);
+q1 := p1 + (0, 1cm);
+drawdblarrow q0..q1;
+label.top(btex $\lambda_0 = c \tau_0$ etex, 1/2[q0, q1]);
+pickup pencircle scaled 0.5;
+draw q0--p0 dashed evenly;
+draw q1--p1 dashed evenly;
+endfig;
+
+beginfig(2);
+pair p[];
+pair q[];
+pair w[];
+p0 := (0, 0);
+p1 := (3cm, 0);
+p2 := (6cm, 0);
+p3 := (7cm, 0);
+
+draw p0--p1--p2;
+drawarrow p2--p3;
+pickup pencircle scaled 8;
+draw p0 withcolor .75 white;
+draw p1 withcolor blue;
+draw p2;
+
+pickup defaultpen;
+w0 := p0 - (0, 1cm);
+w1 := p1 - (0, 1cm);
+w2 := p2 - (0, 1cm);
+drawdblarrow w0..w2;
+draw w0--p0 dashed evenly;
+draw w2--p2 dashed evenly;
+label.top(btex $\lambda_0 = c \tau_0$ etex, 1/2[w0, w2]);
+
+q0 := p0 + (0, 1cm);
+q1 := p1 + (0, 1cm);
+q2 := p2 + (0, 1cm);
+drawdblarrow q0..q1;
+label.bot(btex $\delta x = v \tau_0$ etex, 1/2[q0, q1]);
+drawdblarrow q1..q2;
+label.bot(btex $\lambda = (c - v) \tau_0$ etex, 1/2[q1, q2]);
+draw p0--q0 dashed evenly;
+draw p1--q1 dashed evenly;
+draw p2--q2 dashed evenly;
+endfig;
+end;

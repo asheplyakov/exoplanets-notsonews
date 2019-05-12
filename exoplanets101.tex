@@ -8,6 +8,7 @@
 \usepackage{mathabx} % astronomical symbols
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
 \usepackage{booktabs}
 \usepackage{sidecap}
 \usepackage{caption}
@@ -173,6 +174,21 @@ Transiting Exoplanet Survey Satellite (TESS), April 2018 -- now
 
 
 \section{Doppler spectroscopy}
+\begin{frame}
+\frametitle{Classical Doppler effect}
+\begin{columns}
+\column{0.65\textwidth}
+\includegraphics[width=.9\textwidth]{doppler.1}
+\vspace{0.5cm}
+\includegraphics[width=.9\textwidth]{doppler.2}
+\column{0.35\textwidth}
+\includegraphics[width=\textwidth]{img/Dopplerspectr-above.png}
+\end{columns}
+\begin{displaymath}
+\lambda = \left(1 - \frac{v}{c}\right) \lambda_0
+\end{displaymath}
+
+\end{frame}
 \begin{frame}
 \frametitle{Doppler spectroscopy}
 
