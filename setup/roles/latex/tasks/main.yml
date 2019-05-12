@@ -1,0 +1,13 @@
+---
+
+- name: install LaTeX on Debian
+  package: name={{ item }} state=present
+  become: true
+  with_items:
+    - texlive-latex-base 
+    - texlive-latex-extra
+    - texlive-fonts-extra
+    - texlive-pstricks
+    - texlive-metapost
+  when: ansible_os_family == 'Debian'
+
